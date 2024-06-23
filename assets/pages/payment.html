@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eQuinox - Payment Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../images/logo1-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(../images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .list-group-item {
+            font-size: 0.9rem;
+        }
+
+        .total-amount {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #060a2c;
+        }
+
+        .form-check a {
+            text-decoration: none;
+            color: #060a2c;
+        }
+
+        /* Adjusting layout for small screens */
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center head">Order Summary</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <img src="../images/ebooks&guides.jpg" alt="Ebook Icon" class="img-thumbnail"
+                                            style="max-width: 50px; height: auto;">
+                                    </div>
+                                    <div class="col">
+                                        Ebook: Introduction to Digital Marketing - ₱150.00
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <img src="../images/music.png" alt="Music Icon" class="img-thumbnail"
+                                            style="max-width: 50px; height: auto;">
+                                    </div>
+                                    <div class="col">
+                                        Music Album: Summer Vibes - ₱50.00
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <img src="../images/templates.png" alt="Template Icon" class="img-thumbnail"
+                                            style="max-width: 50px; height: auto;">
+                                    </div>
+                                    <div class="col">
+                                        Website Template: Creative Portfolio - ₱30.00
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <img src="../images/sampleP.png" alt="Theme Icon" class="img-thumbnail"
+                                            style="max-width: 50px; height: auto;">
+                                    </div>
+                                    <div class="col">
+                                        Wordpress Theme: Tech Blog - ₱120.00
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Add more products dynamically here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center head">Payment Details</h5>
+                        <div class="form-group">
+                            <label for="paymentMethod">Payment Method</label>
+                            <select class="form-control" id="paymentMethod" name="paymentMethod" required>
+                                <option value="creditCard">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="masterCard">Master Card</option>
+                                <option value="visa">Visa</option>
+                                <option value="gCash">GCash</option>
+                                <!-- Add more payment methods if needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalAmountDue">Total Amount Due</label>
+                            <input type="text" class="form-control total-amount" id="totalAmountDue"
+                                name="totalAmountDue" value="₱350.00" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                        <hr>
+                        <a href="payment_confirmation.html" class="btn btn-primary btn-block custom-btn">Proceed to
+                            Payment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

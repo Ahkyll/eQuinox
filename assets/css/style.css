@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,
+footer {
+  background-color: #060a2c;
+  color: #fff;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Remove hover effect on nav links */
+.nav-link:hover {
+  background: -webkit-linear-gradient(#f528af, #b95fe8, #0ce9fa);
+  background-clip: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  background: -webkit-linear-gradient(#2e1279, #b95fe8, #0ce9fa);
+  background-clip: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.large-font {
+  font-size: 18px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+}
+.carousel-background {
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-footer {
+  background: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.description-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card-img-top:hover + .card-img-overlay,
+.card-img-overlay:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-opacity-75 {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.modal-fade {
+  margin-bottom: 5px;
+  color: black;
+}
+
+.custom-bg {
+  background-color: #060a2c;
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+}
+
+.custom-bg2 {
+  min-height: 100vh;
+  background-color: #f1efef;
+}
+.custom-btn {
+  background-color: #2e1279;
+  color: #fff;
+}
+
+footer .container {
+  padding-top: 30px;
+}
+
+.modal-header {
+  background-color: #060a2c;
+  color: whitesmoke;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.review-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.review-item p {
+  margin: 0;
+}
+
+.review-item .text-warning {
+  margin-top: 10px;
+}
+
+.head {
+  color: #fff;
+  font-weight: bold;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.head2 {
+  color: #060a2c;
+  font-weight: bold;
+  padding: 50px;
+  font-size: 50px;
+}
+.category-item {
+  position: relative;
+  height: 200px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px; /* Optional: to give rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 10px;
+}
+
+/* Additional styling to ensure text readability */
+.category-item p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  margin: 0px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  border-radius: 5px;
+}
+.category-img {
+  width: 500px;
+  height: 200px;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-time {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.comment-text {
+  margin-top: 10px;
+  color: #555;
+  font-size: 1em;
+}
+
+.comment-form {
+  margin-top: 40px;
+}
+
+#commentForm .form-group {
+  margin-bottom: 15px;
+}
+
+#commentForm label {
+  font-weight: bold;
+}
+
+#commentForm textarea {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#commentForm button {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.product-item h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.pagination .page-link {
+  color: black;
+  margin-top: 20px; /* Change to your desired color for default links */
+}
+
+.payment-methods img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing between images */
+}
+

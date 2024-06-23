@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eQuinox - Thank You Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo1-removebg-preview.png" type="image/png">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(../images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .confirmation-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 600px;
+            /* Adjust the max-width as needed */
+            width: 100%;
+        }
+
+        .confirmation-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card confirmation-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Thank You!</h5>
+                        <p>Your order has been successfully placed.</p>
+                        <p>Here are your order details:</p>
+                        <ul class="list-unstyled">
+                            <li>Ebook: Introduction to Digital Marketing - <b>₱150.00</b></li>
+                            <li>Music Album: Summer Vibes - <b>₱50.00</b></li>
+                            <li>Website Template: Creative Portfolio - <b>₱30.00</b></li>
+                            <li>Wordpress Theme: Tech Blog - <b>₱120.00</b></li>
+                            <!-- Add more products dynamically here -->
+                        </ul>
+                        <p style="font-weight: bold;">A confirmation email has been sent to your email address with
+                            further details.</p>
+                        <a href="#" class="btn btn-primary custom-btn">Download Invoice</a>
+                        <a href="home.html" class="btn btn-secondary">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
