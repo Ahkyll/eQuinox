@@ -511,7 +511,7 @@
                     <ul class="list-unstyled">
                         <li><a href="home.html" class="nav-link">Home</a></li>
                         <li><a href="products.php" class="nav-link">Products</a></li>
-                        <li><a href="in_sales.php" class="nav-link">In Sale</a></li>
+                        <li><a href="in_sales.php" class="nav-link">On Sale</a></li>
                         <li><a href="about_us.html" class="nav-link">About Us</a></li>
                     </ul>
                 </div>
@@ -535,7 +535,7 @@
         </div>
         <hr style="background-color: #fff;">
         <div class="text-center py-2">
-            &copy; 2024 eQuinox_gomo. All Rights Reserved.
+            &copy; 2024 eQuinox_ahkyll. All Rights Reserved.
         </div>
     </footer>
 
