@@ -8,8 +8,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/logo1-removebg-preview.png" type="image/png">
-
-
     <style>
         body {
             margin: 0;
@@ -21,7 +19,6 @@
             background-image: url(../images/bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            text-align: center;
         }
 
         .confirmation-card {
@@ -30,17 +27,14 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
             max-width: 600px;
-            /* Adjust the max-width as needed */
             width: 100%;
+            text-align: center;
+            padding: 20px;
         }
 
         .confirmation-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-body {
-            text-align: center;
         }
 
         .card-title {
@@ -55,33 +49,32 @@
             font-size: 1rem;
             border-radius: 5px;
         }
+
+        .list-unstyled {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 500px;
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card confirmation-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Thank You!</h5>
-                        <p>Your order has been successfully placed.</p>
-                        <p>Here are your order details:</p>
-                        <ul class="list-unstyled">
-                            <li>Ebook: Introduction to Digital Marketing - <b>₱150.00</b></li>
-                            <li>Music Album: Summer Vibes - <b>₱50.00</b></li>
-                            <li>Website Template: Creative Portfolio - <b>₱30.00</b></li>
-                            <li>Wordpress Theme: Tech Blog - <b>₱120.00</b></li>
-                            <!-- Add more products dynamically here -->
-                        </ul>
-                        <p style="font-weight: bold;">A confirmation email has been sent to your email address with
-                            further details.</p>
-                        <a href="#" class="btn btn-primary custom-btn">Download Invoice</a>
-                        <a href="home.html" class="btn btn-secondary">Back to Home</a>
-                    </div>
-                </div>
-            </div>
+    <div class="confirmation-card">
+        <div class="card-body">
+            <h5 class="card-title">Thank You!</h5>
+            <p>Your order has been successfully placed.</p>
+            <p>Here are your order details:</p>
+            <ul class="list-unstyled">
+                <li>Ebook: Introduction to Digital Marketing - <b>₱150.00</b></li>
+                <li>Music Album: Summer Vibes - <b>₱50.00</b></li>
+                <li>Website Template: Creative Portfolio - <b>₱30.00</b></li>
+                <li>Wordpress Theme: Tech Blog - <b>₱120.00</b></li>
+                <!-- Add more products dynamically here -->
+            </ul>
+            <p style="font-weight: bold;">A confirmation email has been sent to your email address with further details.
+            </p>
+            <a href="#" class="btn btn-primary custom-btn">Download Invoice</a>
+            <a href="home.html" class="btn btn-secondary">Back to Home</a>
         </div>
     </div>
 
